@@ -1,0 +1,111 @@
+#intro{
+    height: calc(100vh-4rem);
+    width: 100vw;
+    max-width:75rem ;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    /* top: -2.5rem; */
+    top: -7rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+   height:100vh;
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName{
+    color: rgb(255, 191, 0);
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing:1px ;
+}
+
+.btn{
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width:840px){
+    
+    .bg{
+        right:-10vw; 
+        
+    }
+    .introContent{
+        font-size: 10vw;
+ 
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480px){
+    
+    .bg{
+        right:-40vw; 
+        top: -9rem;
+        
+    }
+  
+}
+
+/* @media screen and (max-width:840px){
+    
+    .bg{
+        right:-10vw; 
+        left: 0vw; 
+    }
+    .introContent{
+        font-size: 10vw;
+        margin-left: 15vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:435px){
+    .bg{
+        right:-45vw;
+        top: -15vw;
+        
+    }
+    .introContent{
+        font-size: 12vw;
+    }
+    .hello{
+        font-size: 5.5vw;
+    }
+} */
