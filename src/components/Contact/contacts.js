@@ -5,6 +5,22 @@ import GithubIcon from '../../assets/github.png';
 import YoutubeIcon from '../../assets/youtube.png';
 import InstagramIcon from '../../assets/instagram.png';
 import emailjs from '@emailjs/browser';
+import { motion} from 'framer-motion'
+
+const iconVariants = (duration) =>({
+  initial:{y:-10} ,
+  animate: {
+    y:[10,-10],
+    transition:{
+      duration:duration,
+      ease:"linear",
+      repeat:Infinity,
+      repeatType:'reverse',
+    }
+  }
+});
+
+
 
 const Contacts = () => {
   const form = useRef();
@@ -48,18 +64,34 @@ const Contacts = () => {
             Submit
           </button>
           <div className="links">
-            <a href="https://www.linkedin.com/in/prince-kumar-verma-354a82300/" target="_blank" rel="noopener noreferrer">
+            <motion.a 
+            variants={iconVariants(2.5)}
+        initial="initial"
+        animate="animate"
+             href="https://www.linkedin.com/in/prince-kumar-verma-354a82300/" target="_blank" rel="noopener noreferrer">
               <img src={LinkdinIcon} alt="LinkedIn" className="link" />
-            </a>
-            <a href="https://github.com/ThePrince-Verma?tab=repositories" target="_blank" rel="noopener noreferrer">
+            </motion.a>
+            <motion.a 
+            variants={iconVariants(2.5)}
+        initial="initial"
+        animate="animate"
+             href="https://github.com/ThePrince-Verma?tab=repositories" target="_blank" rel="noopener noreferrer">
               <img src={GithubIcon} alt="GitHub" className="link" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCGe3_oiHsO22NLxGbZSr71A" target="_blank" rel="noopener noreferrer">
+            </motion.a>
+            <motion.a 
+            variants={iconVariants(2.5)}
+        initial="initial"
+        animate="animate"
+             href="https://www.youtube.com/channel/UCGe3_oiHsO22NLxGbZSr71A" target="_blank" rel="noopener noreferrer">
               <img src={YoutubeIcon} alt="YouTube" className="link" />
-            </a>
-            <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+            </motion.a>
+            <motion.a 
+            variants={iconVariants(2.5)}
+        initial="initial"
+        animate="animate"
+             href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
               <img src={InstagramIcon} alt="Instagram" className="link" />
-            </a>
+            </motion.a>
           </div>
         </form>
       </div>

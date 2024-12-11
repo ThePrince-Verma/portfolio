@@ -1,0 +1,61 @@
+/* Container styles */
+.technologies-container {
+    border-bottom: 2px solid rgb(50, 50, 50); /* Neutral-800 equivalent */
+    padding-bottom: 24px;
+  }
+  
+  /* Title styles */
+  .technologies-title {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 2.5rem; /* Adjust size equivalent to text-4xl */
+    font-weight: bold;
+    color: white; /* Adjust for your preferred color */
+  }
+  
+  /* Grid container styles */
+  .technologies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Adjust spacing between items */
+  }
+  
+  /* Individual card styles */
+  .technology-card {
+    border: 2px solid rgb(50, 50, 50); /* Neutral-800 equivalent */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Equivalent to p-4 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Adjust width to fit content */
+    height: 80px; /* Adjust height to fit content */
+  }
+  
+  /* React icon styles */
+  .react-icon1 {
+    font-size: 3rem; /* Equivalent to text-7xl */
+    color: #00bcd4; /* Cyan-400 equivalent */
+  }
+  .react-icon2 {
+    font-size: 3rem; /* Equivalent to text-7xl */
+    color: #39d400; /* Cyan-400 equivalent */
+  }
+  .react-icon3 {
+    font-size: 3rem; /* Equivalent to text-7xl */
+    color: #006dd4; /* Cyan-400 equivalent */
+  }
+  .react-icon4 {
+    font-size: 3rem; /* Equivalent to text-7xl */
+    color: #d46a00; /* Cyan-400 equivalent */
+  }
+  .react-icon5 {
+    font-size: 3rem; /* Equivalent to text-7xl */
+    color: #7e20d0; /* Cyan-400 equivalent */
+  }
+  .react-icon6 {
+    font-size: 3rem; /* Equivalent to text-7xl */
+    color: #d40000; /* Cyan-400 equivalent */
+  }
+  

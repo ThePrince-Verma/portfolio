@@ -55,6 +55,16 @@
     margin: 0 0.25rem;
     height: 1rem;
 }
+.slidingText{
+    position:absolute;
+    font-size: 30vh;
+    bottom: 0px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 58%;
+    font-weight: bold;
+    z-index: -2;
+}
 
 @media screen and (max-width:840px){
     
@@ -77,6 +87,9 @@
         right:-40vw; 
         top: -9rem;
         
+    }
+    .slidingText{
+        display: none;
     }
   
 }
